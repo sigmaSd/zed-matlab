@@ -1,0 +1,17 @@
+name = "MATLAB"
+version = "0.0.2"
+authors = ["Ruben Zukic <ruben@zukic.net>"]
+description = "MATLAB syntax highlighting for Zed"
+repository = "https://github.com/rzukic/zed-matlab"
+id = "matlab"
+schema_version = 1
+
+[languages]
+MATLAB = "languages/matlab"
+
+[grammars]
+matlab = "grammars/matlab.wasm"
+grammar = "matlab"
+[grammars.matlab]
+repository = "https://github.com/mstanciu552/tree-sitter-matlab"
+commit = "dd95e1fc1b5514aa3a882d5fb8ddbf4683e953f0"
